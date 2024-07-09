@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     private Transform currentBlock = null;
     private Rigidbody2D currentRigidbody;
+    private SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite testSprite;
 
     private Vector2 blockStartPosition = new Vector2(0f, 4f);
 
@@ -57,6 +59,11 @@ public class GameManager : MonoBehaviour
         currentBlock.position = blockStartPosition;
         //currentBlock.GetComponent<SpriteRenderer>().color = Random.ColorHSV();
         currentRigidbody = currentBlock.GetComponent<Rigidbody2D>();
+        spriteRenderer = currentBlock.GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = testSprite;
+        spriteRenderer.drawMode = SpriteDrawMode.Sliced;
+
+        // spriteRenderer.sprite = 
 
         blockSpeed += blockSpeedIncrement; //?
     }

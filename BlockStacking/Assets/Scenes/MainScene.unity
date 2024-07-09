@@ -263,6 +263,7 @@ MonoBehaviour:
   blockHolder: {fileID: 1456686408}
   scoreText: {fileID: 1756708538}
   restartButton: {fileID: 628879651}
+  testSprite: {fileID: 21300000, guid: ae1d4557486b319438a21fb899dccad9, type: 3}
   playing: 1
 --- !u!1 &611970038
 GameObject:
