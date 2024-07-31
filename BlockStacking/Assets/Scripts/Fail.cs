@@ -9,6 +9,6 @@ public class Fail : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         gm.playing = false;
-        Debug.Log("Fail");
+        //Debug.Log("Fail");
     }
 }
